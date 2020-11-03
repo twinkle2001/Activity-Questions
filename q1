@@ -4,9 +4,7 @@ public class q1 {
 
 	public static void main(String[] args) {
 		Scanner sc=new Scanner(System.in);
-		System.out.println("FOUR NUCLEOTIDES FOUND IN DNA ARE:");
-		System.out.println(" ADENINE(A),CYTOSINE(C),GUANINE(G), AND THYMINE(T)");
-		System.out.println("ENTER ANY NUCLEOTIDE(S) OF THE DNA STRAND(A/C/G/T):");
+		
 		String s=sc.nextLine();
 		String r1,r2,r3,r4;
 		if((s.contains("B"))||(s.contains("D"))||(s.contains("E"))||(s.contains("F"))||
