@@ -1,1 +1,71 @@
+import java.util.Scanner;
+
+public class q2 {
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		int count1=0,count2=0;
+for(int i=1;i<=3;i++)
+{
+	System.out.println("ROUND"+i);
+		
+		int computer = (int)(Math.random() * 3);
+
+		
+		System.out.println("Enter User’s choice:");
+		int user = input.nextInt();
+
+		System.out.println("Computer’s choice (randomly generated):");
+		switch (computer)
+		{
+			case 0: System.out.println("scissor"); break;
+			case 1: System.out.println("rock"); break;
+			case 2: System.out.println("paper");
+		}
+
+		System.out.print(" User is ");
+		switch (user)
+		{
+			case 0: System.out.println("scissor"); break;
+			case 1: System.out.println("rock"); break;
+			case 2: System.out.println("paper ");
+		}
+
+		
+		if (computer == user)
+			{
+			System.out.println("Tie of round");
+			}
+		else
+		{
+			boolean win = (user == 0 && computer == 2) ||
+							  (user == 1 && computer == 0) || 
+							  (user == 2 && computer == 1);
+			if (win)
+			{
+				System.out.println("User won the round.");
+				count1++;
+			}
+			else
+				{
+				System.out.println("Computer won the round.");
+			    count2++;
+			}
+		}
+      
+	}
+System.out.print("3 Rounds over,User scored"+count1);
+    if(count1>count2)
+    {
+    	System.out.print(",user won the game.");
+    }
+     if(count1<count2)
+    {
+    	System.out.print(",computer won the game.");
+    }
+     if(count1==count2)
+    {
+    	System.out.print(",Tie of Game");
+    }
+}
+}
 
