@@ -1,6 +1,5 @@
 public class q6 {
-
-	public static void main(String args []){
+public static void main(String args []){
         long nOP = 0;
         int n = 1;
         int mL = 10000000;
