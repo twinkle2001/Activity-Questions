@@ -23,6 +23,6 @@ public class q3 {
 		        sN = i;
 		    }
 		}
-		System.out.println(sN);
+		System.out.println("STARTING NUMBER="+sN);
 	}
 }
