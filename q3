@@ -18,7 +18,6 @@ public class q3 {
 		        l++;
 		    }
 
-		    
 		    if (l > sL) {
 		        sL = l;
 		        sN = i;
