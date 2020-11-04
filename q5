@@ -37,8 +37,7 @@ public class q5 {
         } 
         return max_product; 
     } 
-      
-    public static void main (String[] args) 
+      public static void main (String[] args) 
     { 
       System.out.print("Largest Palindrome:"+larrgestPalindrome()); 
     } 
